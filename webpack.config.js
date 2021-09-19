@@ -1,5 +1,5 @@
 const path = require('path');
-const webpack = rquire('webpack');
+const webpack = require('webpack');
 
 // Definimos nuestro unico export, que será un objeto de jabascript con la confiuración para webpack
 
