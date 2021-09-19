@@ -51,4 +51,12 @@ module.exports = {
     public: '/dist/',
     filename: 'bundle.js',
   },
+
+  // Definimos opciones para nuestro server cuando estemos en development y que nos permita ver la aplicacion en el explorador
+  devServer: {
+    contentBase: path.join(__dirname, 'public/'),
+    port: 3000,
+    publicPath: 'http:localhost:3000/dist/',
+    hotOnly: true,
+  },
 };
