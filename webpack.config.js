@@ -40,8 +40,15 @@ module.exports = {
         use: ['style-loader', 'css-loader'],
       },
     ],
+  },
 
-    // Agregamos la propiedad resolve
-    resolve: { extensions: ['*', '.js', '.jsx'] },
+  // Agregamos la propiedad resolve
+  resolve: { extensions: ['*', '.js', '.jsx'] },
+
+  // Definimos el output
+  output: {
+    path: path.resolve(__dirname, 'dist/'),
+    public: '/dist/',
+    filename: 'bundle.js',
   },
 };
