@@ -1,13 +1,17 @@
 {
     "env": {
         "browser": true,
-        "es2021": true
+        "es2021": true,
+        "jest": true
     },
     "extends": [
         "eslint:recommended",
         "plugin:react/recommended",
+        "plugin:react/jsx-runtime",
         "plugin:@typescript-eslint/recommended",
-        "plugin:react/jsx-runtime"
+        "airbnb",
+        "prettier",
+        "plugin:prettier/recommended"
     ],
     "parser": "@typescript-eslint/parser",
     "parserOptions": {
@@ -20,7 +24,8 @@
     "plugins": [
         "react",
         "@typescript-eslint",
-        "react-hooks"
+        "react-hooks",
+        "prettier"
     ],
     "rules": {
       "react/react-in-jsx-scope": "off",
@@ -30,8 +35,10 @@
       "react/prop-types": "off",
       "react/jsx-uses-react": "error",
       "react/jsx-uses-vars": "error",
+      "react/function-component-definition": "off",
       "@typescript-eslint/no-use-before-define": ["error"],
-      "@typescript-eslint/no-unused-vars": ["error"]
+      "@typescript-eslint/no-unused-vars": ["error"],
+      "import/extensions": "off"
     },
     "settings": {
       "import/resolver": {

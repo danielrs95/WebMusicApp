@@ -19,14 +19,19 @@
     "@babel/preset-react": "^7.14.5",
     "babel-loader": "^8.2.2",
     "css-loader": "^6.3.0",
-    "eslint": "^8.18.0",
+    "eslint": "^8.2.0",
+    "eslint-config-airbnb": "19.0.4",
+    "eslint-config-prettier": "^8.5.0",
     "eslint-import-resolver-typescript": "^3.1.0",
-    "eslint-plugin-import": "^2.26.0",
-    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react-hooks": "^4.3.0",
     "file-loader": "^6.2.0",
     "html-webpack-plugin": "^5.3.2",
     "husky": "^8.0.0",
     "lint-staged": "^13.0.3",
+    "prettier": "^2.7.1",
     "style-loader": "^3.2.1",
     "webpack": "^5.53.0",
     "webpack-cli": "^4.8.0",
@@ -39,12 +44,12 @@
     "@types/react-dom": "^18.0.5",
     "@typescript-eslint/eslint-plugin": "^5.29.0",
     "@typescript-eslint/parser": "^5.29.0",
-    "eslint-plugin-react": "^7.30.1",
+    "eslint-plugin-react": "^7.28.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "typescript": "^4.7.4"
   },
   "lint-staged": {
-    "*.tsx": "eslint"
+    "*.tsx": "eslint --fix"
   }
 }
